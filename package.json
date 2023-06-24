@@ -1,6 +1,6 @@
 {
-  "name": "@mrcandie/react-preview",
-  "version": "0.0.1",
+  "name": "mrcandie-react-preview",
+  "version": "0.0.8",
   "description": "A simple react component for previewing uploaded images",
   "type": "module",
   "scripts": {
@@ -28,8 +28,5 @@
     "react-dom": "^18.2.0"
   },
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "files": [
-    "dist"
-  ]
+  "module": "dist/index.es.js"
 }

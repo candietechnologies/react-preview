@@ -1,36 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function Preview({
-  imgStyle,
-  innerStyle,
-  outerStyle,
-  height,
-  width,
-  alt,
-  file,
-  multiple = false,
-}) {
-  const [fileUrl, setFileUrl] = useState([]);
-
-  if (multiple) {
-    setFileUrl(file.map((file) => URL.createObjectURL(file)));
-  } else {
-    setFileUrl([URL.createObjectURL(file)]);
-  }
-
+export function Preview({ imgStyle, outerStyle, height, width, alt, file }) {
   return (
-    <div style={innerStyle}>
-      {fileUrl?.map((file, i) => (
-        <div key={i} style={outerStyle}>
-          <img
-            src={file}
-            height={height}
-            width={width ? width : "100%"}
-            style={imgStyle}
-            alt={alt ? alt : "preview"}
-          />
-        </div>
-      ))}
+    <div style={outerStyle}>
+      <img
+        src={file ? URL.createObjectURL(file) : ""}
+        height={height}
+        width={width ? width : "100%"}
+        style={imgStyle}
+        alt={alt ? alt : "preview"}
+      />
     </div>
   );
 }
