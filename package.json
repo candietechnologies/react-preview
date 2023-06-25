@@ -1,12 +1,18 @@
 {
   "name": "mrcandie-react-preview",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A simple react component for previewing uploaded images",
   "type": "module",
   "scripts": {
     "rollup": "rollup -c"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "image-preview",
+    "mrcandie",
+    "typescript",
+    "reach-dom"
+  ],
   "author": "mrcandie",
   "license": "ISC",
   "devDependencies": {
