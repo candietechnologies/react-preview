@@ -86,4 +86,14 @@ export default function app(){
 }
 ```
 
+### onClick
+
+the onClick props takes a function that should be triggered when the preview component is clicked
+
+```
+export default function app(){
+    return <Preview onClick={()=> alert('welcome to mrcandie-react-preview)} height='200px' width='100px' alt='description here' outerStyle={{width: '100%'}} imgStyle={{width: '100%'}} />
+}
+```
+
 [see source code here ](https://github.com/candietechnologies/react-preview)
