@@ -10,7 +10,7 @@ install library by running
 
 import component into your project
 
-`import Preview from 'mrcandie-react-preview'`
+`import { Preview } from 'mrcandie-react-preview'`
 
 render Preview component in your project
 
